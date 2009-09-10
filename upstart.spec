@@ -15,7 +15,8 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 #Provides: SysVinit = 2.87-2, sysvinit = 2.87-2
 Conflicts:	sysvinit
 BuildRequires:  gettext
-BuildRequires: dbus-devel
+BuildRequires: 	dbus-devel
+BuildRequires:	expat-devel
 
 %description
 Upstart is an event-based replacement for the /sbin/init daemon which
