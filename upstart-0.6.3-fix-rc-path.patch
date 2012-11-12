@@ -1,0 +1,36 @@
+From 85cf4792de73fc76f7f37b72236359ee94d82669 Mon Sep 17 00:00:00 2001
+From: Frederic Crozat <fcrozat@mandriva.com>
+Date: Thu, 10 Sep 2009 14:42:26 +0200
+Subject: [PATCH] Fix path for rc
+
+---
+ conf/rc-sysinit.conf |    2 +-
+ conf/rc.conf         |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/conf/rc-sysinit.conf b/conf/rc-sysinit.conf
+index 09c9c46..1efe550 100644
+--- a/conf/rc-sysinit.conf
++++ b/conf/rc-sysinit.conf
+@@ -51,7 +51,7 @@ script
+     done
+ 
+     # Run the system initialisation scripts
+-    [ -n "${FROM_SINGLE_USER_MODE}" ] || /etc/init.d/rcS
++    [ -n "${FROM_SINGLE_USER_MODE}" ] || /etc/rc.d/rc.sysinit
+ 
+     # Switch into the default runlevel
+     telinit "${DEFAULT_RUNLEVEL}"
+diff --git a/conf/rc.conf b/conf/rc.conf
+index 91a331a..64ce234 100644
+--- a/conf/rc.conf
++++ b/conf/rc.conf
+@@ -15,4 +15,4 @@ export PREVLEVEL
+ task
+ 
+ console output
+-exec /etc/init.d/rc $RUNLEVEL
++exec /etc/rc.d/rc $RUNLEVEL
+-- 
+1.6.4.2
+
