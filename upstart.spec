@@ -79,3 +79,11 @@ rm -rf %{buildroot}
 /sbin/telinit
 /sbin/restart
 %{_mandir}/*/*
+
+
+%changelog
+* Thu Sep 10 2009 Frederic Crozat <fcrozat@mandriva.com> 0.6.3-1mdv2010.0
++ Revision: 436825
+- Fix buildrequires
+- import upstart
+
