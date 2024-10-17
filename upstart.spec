@@ -5,7 +5,7 @@ Summary:        An event-driven init system
 
 Group:          System/Configuration/Boot and Init
 License:        GPLv2+
-URL:            http://upstart.ubuntu.com
+URL:            https://upstart.ubuntu.com
 Source0:        http://upstart.ubuntu.com/download/0.6/upstart-%{version}.tar.bz2
 Source1:	ttyX.conf
 # (fc) 0.6.3-1mdv fix rc path
