@@ -14,6 +14,11 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 #Obsoletes: SysVinit < 2.87-2, sysvinit < 2.87-2
 #Provides: SysVinit = 2.87-2, sysvinit = 2.87-2
 Conflicts:	sysvinit
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  gettext
 BuildRequires: 	dbus-devel
 BuildRequires:	expat-devel
