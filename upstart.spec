@@ -1,6 +1,6 @@
 Name:           upstart
 Version:        0.6.3
-Release:        %mkrel 1
+Release:        2
 Summary:        An event-driven init system
 
 Group:          System/Configuration/Boot and Init
